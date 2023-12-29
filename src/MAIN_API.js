@@ -1,0 +1,1 @@
+export const baseUrl='https://pandaschool.pythonanywhere.com/api/'
