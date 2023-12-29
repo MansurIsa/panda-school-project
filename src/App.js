@@ -72,7 +72,7 @@ const App = () => {
 {/*  */}
 
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/panda-school-project' element={<Home />} />
         {
           settingsListArr[0]?.about_page_active ?
             <Route path='/haqqimizda' element={<AboutPage otherPageBanner={settingsListArr[0]?.about_page_banner} />} />
