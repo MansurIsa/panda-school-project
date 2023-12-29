@@ -1,6 +1,6 @@
 {
   "name": "panda-school-project",
-  "homepage": "/panda-school-project",
+  "homepage": "https://mansurisa.github.io/panda-school-project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,7 +10,6 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.3",
     "dompurify": "^3.0.6",
-    "gh-pages": "^6.1.1",
     "multiselect-react-dropdown": "^2.0.25",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -50,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
