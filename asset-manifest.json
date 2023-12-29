@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/panda-school-proje/static/css/main.b6c52c4d.css",
+    "main.js": "/panda-school-proje/static/js/main.665ff846.js",
+    "static/media/about.png": "/panda-school-proje/static/media/about.d2e70949c4b95ec64d1f.png",
+    "static/media/tip4.jpeg": "/panda-school-proje/static/media/tip4.f40296defb734cb054c9.jpeg",
+    "static/media/tip1.png": "/panda-school-proje/static/media/tip1.a8870951665a54415fec.png",
+    "static/media/checklist (4).png": "/panda-school-proje/static/media/checklist (4).2a4526ddd14ea3bb7ddd.png",
+    "static/media/Contact-us-background.jpeg": "/panda-school-proje/static/media/Contact-us-background.8487e4aefbc1192e2ca3.jpeg",
+    "static/media/about-bg.jpeg": "/panda-school-proje/static/media/about-bg.3f56742f1575bfaedc36.jpeg",
+    "static/media/online-course (1).png": "/panda-school-proje/static/media/online-course (1).3dc303b2fbf69c476cbb.png",
+    "static/media/map.bba1a95d.jpg": "/panda-school-proje/static/media/map.bba1a95d.e263eac432dcc95f6221.jpg",
+    "static/media/registered (1).png": "/panda-school-proje/static/media/registered (1).818f49dc69409b44da7a.png",
+    "static/media/logo_footer.png": "/panda-school-proje/static/media/logo_footer.9750975ea82fa88cd4f5.png",
+    "static/media/bg-newletter.webp": "/panda-school-proje/static/media/bg-newletter.0093d61d852d2dd9b5b0.webp",
+    "index.html": "/panda-school-proje/index.html",
+    "main.b6c52c4d.css.map": "/panda-school-proje/static/css/main.b6c52c4d.css.map",
+    "main.665ff846.js.map": "/panda-school-proje/static/js/main.665ff846.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6c52c4d.css",
+    "static/js/main.665ff846.js"
+  ]
+}
