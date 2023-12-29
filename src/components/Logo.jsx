@@ -12,7 +12,7 @@ const Logo = () => {
         dispatch(getSettingsList())
     }, [dispatch])
     return (
-        <Link to='/panda-school-proje'>
+        <Link to='/panda-school-project'>
             {
                 settingsListArr[0]?.logo_active ?
                     <img className='logo' src={settingsListArr[0]?.logo} alt="" />
