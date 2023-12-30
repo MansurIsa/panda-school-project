@@ -258,6 +258,9 @@ textarea {
     animation: navbarAnime 0.5s ease-in-out;
     box-shadow: 0 0 9px rgba(0, 0, 0, 0.23);
 }
+.header_second_container_bg.bg .bars_icon{
+    color: var(--pandaschool);
+}
 .header_second_container_bg.bg .nav_list li a{
     color: var(--black);
     /* font-weight: 500; */
@@ -998,7 +1001,7 @@ nav {
     padding-bottom: 80px;
     margin-bottom: 40px;
     position: relative;
-    padding-top: 160px;
+    /* padding-top: 160px; */
 }
 
 .services_header_img {
@@ -1462,6 +1465,7 @@ nav {
 .footer_end_container {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     /* align-items: flex-start; */
     /* position: relative; */
 }
@@ -1713,7 +1717,8 @@ nav {
     width: calc(100% + 100px);
     content: "";
     position: absolute;
-    background-image: linear-gradient(to top, #8A5DA4 0%, #a408ff 100%);
+    /* background-image: linear-gradient(to top, #FC7012 0%, #FC7012 100%); */
+    background-image: linear-gradient(to top, #FC7012 0%, #6059bb 100%);
     border-radius: 4px 4px 100% 100%;
     transition: all 0.4s ease-out;
     top: 0;
@@ -1837,7 +1842,7 @@ nav {
     position: fixed;
     bottom: 30%;
     left: 30px;
-    z-index: 9;
+    z-index: 99999;
     animation: pulse 2s ease-out infinite;
     width: 50px;
     height: 50px;
@@ -1865,7 +1870,7 @@ nav {
     position: fixed;
     bottom: 40%;
     left: 30px;
-    z-index: 9;
+    z-index: 99999;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1907,7 +1912,7 @@ nav {
 
 .whatsapp_container{
     position: fixed;
-    bottom: 30%;
+    bottom: 40%;
     right: 10px;
     width: 230px;
     height: 200px;

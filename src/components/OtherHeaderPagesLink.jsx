@@ -6,7 +6,7 @@ const OtherHeaderPagesLink = ({otherHeaderPagesLink}) => {
   return (
     <div className='container'>
         <div className="other_header_pages_link">
-            <Link to='/'>ANA SƏHİFƏ</Link>
+            <Link to='/panda-school-project'>ANA SƏHİFƏ</Link>
             <RxSlash/>
             <p>{otherHeaderPagesLink}</p>
         </div>

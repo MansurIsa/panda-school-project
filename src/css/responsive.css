@@ -28,6 +28,7 @@
     }
     .about_bg_shadov{
         flex-direction: column;
+        
     }
 }
 
@@ -70,7 +71,7 @@
         background-color: var(--white);
         height: 100vh;
         gap: 10px;
-        z-index: 99 !important;
+        z-index: 9999999999999 !important;
         width: 300px;
         /* overflow: auto !important; */
         padding-left: 30px;
@@ -164,11 +165,21 @@
     }
 
 
+    .nav_inner_list ul {
+       
+       
+        box-shadow: none;
+    
+    }
 
 
 
 }
-
+@media screen and (max-width: 970px) {
+    .footer_second_card h4{
+        font-size: 1.5rem;
+    }
+}
 @media screen and (max-width: 940px) {
     .other_about_container {
         flex-direction: column;
@@ -242,7 +253,7 @@
     }
 
     .fixed_social {
-        top: 60%;
+        /* top: 60%; */
     }
 
     .other_cv_send_form_input_container {
@@ -270,6 +281,20 @@
     .other_contact_form_card input::placeholder,
     .other_contact_form_card textarea::placeholder {
         color: var(--black);
+    }
+    .fixed_social_container{
+        bottom: 15%;
+        left: auto;
+        right: 20px;
+
+    }
+    .fixed_social{
+        bottom: 25%;
+        left: auto;
+        right: 20px;
+    }
+    .whatsapp_container{
+        bottom: 60%;
     }
 }
 
@@ -395,7 +420,7 @@
     }
 
     .fixed_social .fixed_social_icon {
-        font-size: 2.2rem !important;
+        font-size: 1.8rem !important;
     }
 
     .section_header_link {
@@ -473,6 +498,17 @@
         color: var(--white);
         font-size: 3rem;
     }
+    .footer_end_container {
+        
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    
+    }
+    .footer_second_card{
+        width: 100%;
+    }
+    
 }
 
 @media screen and (max-width: 390px) {
@@ -613,6 +649,7 @@
     .footer_second_card {
         max-width: 240px;
         flex: 1;
+
     }
 
     .other_contact_cards {
@@ -654,10 +691,7 @@
 }
 
 @media screen and (max-width: 620px) {
-    .footer_end_container {
-        flex-direction: column;
-
-    }
+    
 
     .footer_end_link li a {
         font-size: 1.4rem;
@@ -668,3 +702,18 @@
 
 
 }
+
+@media screen and (max-width: 800px) {
+    
+
+    .footer_end_container {
+        flex-wrap: wrap;
+        max-width: 600px;
+    
+    }
+
+
+}
+
+
+
