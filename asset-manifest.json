@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/panda-school-project/static/css/main.676214f6.css",
-    "main.js": "/panda-school-project/static/js/main.f9efc245.js",
+    "main.css": "/panda-school-project/static/css/main.6ca500e3.css",
+    "main.js": "/panda-school-project/static/js/main.2c5e95f2.js",
     "static/media/about.png": "/panda-school-project/static/media/about.d2e70949c4b95ec64d1f.png",
     "static/media/tip4.jpeg": "/panda-school-project/static/media/tip4.f40296defb734cb054c9.jpeg",
     "static/media/tip1.png": "/panda-school-project/static/media/tip1.a8870951665a54415fec.png",
@@ -14,11 +14,11 @@
     "static/media/logo_footer.png": "/panda-school-project/static/media/logo_footer.9750975ea82fa88cd4f5.png",
     "static/media/bg-newletter.webp": "/panda-school-project/static/media/bg-newletter.0093d61d852d2dd9b5b0.webp",
     "index.html": "/panda-school-project/index.html",
-    "main.676214f6.css.map": "/panda-school-project/static/css/main.676214f6.css.map",
-    "main.f9efc245.js.map": "/panda-school-project/static/js/main.f9efc245.js.map"
+    "main.6ca500e3.css.map": "/panda-school-project/static/css/main.6ca500e3.css.map",
+    "main.2c5e95f2.js.map": "/panda-school-project/static/js/main.2c5e95f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.676214f6.css",
-    "static/js/main.f9efc245.js"
+    "static/css/main.6ca500e3.css",
+    "static/js/main.2c5e95f2.js"
   ]
 }
