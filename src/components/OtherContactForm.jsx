@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import {  contactEmailChange, contactMessageChange, contactNameChange, contactSubjectChange } from '../redux/MainReducer'
 import axios from 'axios'
 import Swal from 'sweetalert2'
+import { baseUrl } from '../MAIN_API'
 
 const OtherContactForm = () => {
     const dispatch = useDispatch()
@@ -18,7 +19,7 @@ const OtherContactForm = () => {
         }
        await axios({
             method: "POST",
-            url: "https://prestijs.pythonanywhere.com/api/prestij/contact-create/",
+            url: `${baseUrl}site/contact-create/`,
             data
         }).then(resp=>{
             console.log(resp.data);

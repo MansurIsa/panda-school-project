@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { achievementsChange, achievementsSecondChange, achievementsThirdChange, addressChange, birthDateChange, companyNameAddressFieldChange, companyNameAddressFieldSecondChange, companyNameAddressFieldThirdChange, dateOfParticipationStartEndChange, dateOfParticipationStartEndSecondChange, dateOfParticipationStartEndThirdChange, emailChange, fullNameFatherChange, homeNumberChange, mobileNumberChange, otherAchievmentsChange, placeOfExecutedChange, placeOfExecutedSecondChange, placeOfExecutedThirdChange, positionMainObligationChange, positionMainObligationSecondChange, positionMainObligationThirdChange, qualificationChange, qualificationDegreeChange, qualificationDegreeSecondChange, qualificationDegreeThirdChange, qualificationSecondChange, qualificationThirdChange, reasonForLeavingChange, reasonForLeavingSecondChange, reasonForLeavingThirdChange, recommendMobileNumberChange, recommendMobileNumberSecondChange, recommendfullNameFatherChange, recommendfullNameFatherSecondChange, relatedToChange, relatedToSecondChange, resultRateAverageChange, resultRateAverageSecondChange, resultRateAverageThirdChange, studiedDateStartEndChange, studiedDateStartEndSecondChange, studiedDateStartEndThirdChange, studiedUniversityChange, studiedUniversitySecondChange, studiedUniversityThirdChange, subjectToTeachChange, vacancyNameChange, workedDateStartEndChange, workedDateStartEndSecondChange, workedDateStartEndThirdChange } from '../redux/MainReducer';
 import axios from 'axios';
 import Swal from 'sweetalert2';
+import { baseUrl } from '../MAIN_API';
 
 const OtherCVSendFormContainer = () => {
     const dispatch=useDispatch();
@@ -73,7 +74,7 @@ const OtherCVSendFormContainer = () => {
         }
         axios({
             method: "POST",
-            url: "https://prestijs.pythonanywhere.com/api/prestij/resume-create/",
+            url: `${baseUrl}site/resume-create/`,
             data
         }).then(resp=>{
             console.log(resp.data);
