@@ -12,6 +12,7 @@ import HeaderMainContainer from '../components/HeaderMainContainer'
 import Footer from '../components/Footer'
 import MainFirstCards from '../components/MainFirstCards'
 import { Helmet } from 'react-helmet'
+import Partners from '../components/Partners'
 
 const Home = () => {
   return (
@@ -48,7 +49,8 @@ const Home = () => {
         </section>
 
         {/* <section>
-          <NewLetter />
+          <SectionHeader sectionHeader="Partnyorlarımız" sectionLink="Kursumuzla partnyor şirkətlər!" />
+          <Partners />
         </section> */}
       </main>
       <Footer />

@@ -27,7 +27,7 @@ const OtherContactForm = () => {
 
                 Swal.fire({
                     title: "Təbriklər!",
-                    text: "CV məlumatları uğurla göndərildi",
+                    text: "Mesajınız uğurla göndərildi",
                     icon: "success",
                     confirmButtonText: "OK",
                     customClass: "contact_create_modal"

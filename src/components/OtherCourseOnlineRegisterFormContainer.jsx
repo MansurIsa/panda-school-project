@@ -5,6 +5,7 @@ import { courseOnlineRegAbiturientClassFunc, courseOnlineRegAbiturientDimFunc, c
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
+import { baseUrl } from '../MAIN_API';
 
 const OtherCourseOnlineRegisterFormContainer = () => {
     const [selectedCategory, setSelectedCategory] = useState('');
@@ -93,7 +94,7 @@ const OtherCourseOnlineRegisterFormContainer = () => {
 
         axios({
             method: "POST",
-            url: "https://prestijs.pythonanywhere.com/api/prestij/teacher-onlineregister-create/",
+            url: `${baseUrl}site/teacher-onlineregister-create/`,
             data
         }).then(resp => {
             console.log(resp.data);
@@ -137,7 +138,7 @@ const OtherCourseOnlineRegisterFormContainer = () => {
             section: courseOnlineRegAbiturientSelect,
             group: courseOnlineRegAbiturientGroup,
             student_class: courseOnlineRegAbiturientClass,
-            dim_point: courseOnlineRegAbiturientDim
+            dim_point: courseOnlineRegAbiturientDim,
 
 
         }
@@ -145,7 +146,7 @@ const OtherCourseOnlineRegisterFormContainer = () => {
 
         axios({
             method: "POST",
-            url: "https://prestijs.pythonanywhere.com/api/prestij/abiturient-onlineregister-create/",
+            url: `${baseUrl}site/abiturient-onlineregister-create/`,
             data
         }).then(resp => {
             console.log(resp.data);
@@ -182,11 +183,11 @@ const OtherCourseOnlineRegisterFormContainer = () => {
 
             full_name: courseOnlineRegMasterFullName,
             email: courseOnlineRegMasterEmail,
-            mobile_number: courseOnlineRegMasterMobilNumber,
+            mobile_number: +courseOnlineRegMasterMobilNumber,
             university: courseOnlineRegMasterGraduatedUni,
             speciality: courseOnlineRegMasterProfession,
-            identity_card_number: courseOnlineRegMasterPassportCard,
-            dim_point: courseOnlineRegMasterPoint,
+            identity_card_number: +courseOnlineRegMasterPassportCard,
+            dim_point: +courseOnlineRegMasterPoint,
             language: courseOnlineRegMasterForeignLang
 
 
@@ -195,7 +196,7 @@ const OtherCourseOnlineRegisterFormContainer = () => {
 
         axios({
             method: "POST",
-            url: "https://prestijs.pythonanywhere.com/api/prestij/master-onlineregister-create/",
+            url: `${baseUrl}site/master-onlineregister-create/`,
             data
         }).then(resp => {
             console.log(resp.data);
@@ -245,7 +246,7 @@ const OtherCourseOnlineRegisterFormContainer = () => {
 
         axios({
             method: "POST",
-            url: "https://prestijs.pythonanywhere.com/api/prestij/miq-onlineregister-create/",
+            url: `${baseUrl}site/miq-onlineregister-create/`,
             data
         }).then(resp => {
             console.log(resp.data);
@@ -293,7 +294,7 @@ const OtherCourseOnlineRegisterFormContainer = () => {
 
         axios({
             method: "POST",
-            url: "https://prestijs.pythonanywhere.com/api/prestij/civilservice-onlineregister-create/",
+            url: `${baseUrl}site/civilservice-onlineregister-create/`,
             data
         }).then(resp => {
             console.log(resp.data);
@@ -342,7 +343,7 @@ const OtherCourseOnlineRegisterFormContainer = () => {
 
         axios({
             method: "POST",
-            url: "https://prestijs.pythonanywhere.com/api/prestij/computercourse-onlineregister-create/",
+            url: `${baseUrl}site/computercourse-onlineregister-create/`,
             data
         }).then(resp => {
             console.log(resp.data);
@@ -391,7 +392,7 @@ const OtherCourseOnlineRegisterFormContainer = () => {
 
         axios({
             method: "POST",
-            url: "https://prestijs.pythonanywhere.com/api/prestij/foreignlanguage-onlineregister-create/",
+            url: `${baseUrl}site/foreignlanguage-onlineregister-create/`,
             data
         }).then(resp => {
             console.log(resp.data);
@@ -439,7 +440,7 @@ const OtherCourseOnlineRegisterFormContainer = () => {
 
         axios({
             method: "POST",
-            url: "https://prestijs.pythonanywhere.com/api/prestij/accounting-onlineregister-create/",
+            url: `${baseUrl}site/accounting-onlineregister-create/`,
             data
         }).then(resp => {
             console.log(resp.data);
@@ -488,7 +489,7 @@ const OtherCourseOnlineRegisterFormContainer = () => {
 
         axios({
             method: "POST",
-            url: "https://prestijs.pythonanywhere.com/api/prestij/highschool-onlineregister-create/",
+            url: `${baseUrl}site/highschool-onlineregister-create/`,
             data
         }).then(resp => {
             console.log(resp.data);
@@ -533,7 +534,7 @@ const OtherCourseOnlineRegisterFormContainer = () => {
 
         axios({
             method: "POST",
-            url: "https://prestijs.pythonanywhere.com/api/prestij/preschool-onlineregister-create/",
+            url: `${baseUrl}site/preschool-onlineregister-create/`,
             data
         }).then(resp => {
             console.log(resp.data);
@@ -582,7 +583,7 @@ const OtherCourseOnlineRegisterFormContainer = () => {
 
         axios({
             method: "POST",
-            url: "https://prestijs.pythonanywhere.com/api/prestij/primaryschool-onlineregister-create/",
+            url: `${baseUrl}site/primaryschool-onlineregister-create/`,
             data
         }).then(resp => {
             console.log(resp.data);

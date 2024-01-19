@@ -82,7 +82,7 @@ const OtherCVSendFormContainer = () => {
 
                 Swal.fire({
                     title: "Təbriklər!",
-                    text: "Mesaj göndərildi",
+                    text: "CV məlumatları uğurla göndərildi",
                     icon: "success",
                     confirmButtonText: "OK",
                     // width: "400px"
