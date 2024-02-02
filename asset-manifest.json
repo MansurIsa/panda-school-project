@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/panda-school-project/static/css/main.2b7cbddc.css",
-    "main.js": "/panda-school-project/static/js/main.352a5f18.js",
+    "main.css": "/panda-school-project/static/css/main.0e9f957a.css",
+    "main.js": "/panda-school-project/static/js/main.f76eaaf3.js",
     "static/media/about.png": "/panda-school-project/static/media/about.d2e70949c4b95ec64d1f.png",
     "static/media/tip4.jpeg": "/panda-school-project/static/media/tip4.f40296defb734cb054c9.jpeg",
     "static/media/tip1.png": "/panda-school-project/static/media/tip1.a8870951665a54415fec.png",
@@ -10,15 +10,19 @@
     "static/media/about-bg.jpeg": "/panda-school-project/static/media/about-bg.3f56742f1575bfaedc36.jpeg",
     "static/media/online-course (1).png": "/panda-school-project/static/media/online-course (1).3dc303b2fbf69c476cbb.png",
     "static/media/map.bba1a95d.jpg": "/panda-school-project/static/media/map.bba1a95d.e263eac432dcc95f6221.jpg",
+    "static/media/exam (1).png": "/panda-school-project/static/media/exam (1).6d6fbad02c22255ad098.png",
     "static/media/registered (1).png": "/panda-school-project/static/media/registered (1).818f49dc69409b44da7a.png",
+    "static/media/user.png": "/panda-school-project/static/media/user.36c7cfd93db57c765c3e.png",
+    "static/media/exam.png": "/panda-school-project/static/media/exam.5a633d4de26982a8cf80.png",
     "static/media/logo_footer.png": "/panda-school-project/static/media/logo_footer.9750975ea82fa88cd4f5.png",
+    "static/media/logout.png": "/panda-school-project/static/media/logout.a78baedd6fc26d3affb0.png",
     "static/media/bg-newletter.webp": "/panda-school-project/static/media/bg-newletter.0093d61d852d2dd9b5b0.webp",
     "index.html": "/panda-school-project/index.html",
-    "main.2b7cbddc.css.map": "/panda-school-project/static/css/main.2b7cbddc.css.map",
-    "main.352a5f18.js.map": "/panda-school-project/static/js/main.352a5f18.js.map"
+    "main.0e9f957a.css.map": "/panda-school-project/static/css/main.0e9f957a.css.map",
+    "main.f76eaaf3.js.map": "/panda-school-project/static/js/main.f76eaaf3.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b7cbddc.css",
-    "static/js/main.352a5f18.js"
+    "static/css/main.0e9f957a.css",
+    "static/js/main.f76eaaf3.js"
   ]
 }
