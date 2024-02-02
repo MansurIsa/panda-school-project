@@ -8,23 +8,17 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { LiaCalendarSolid } from "react-icons/lia"
 import { useDispatch, useSelector } from 'react-redux';
 import DOMPurify from 'dompurify';
-import { getNewsList } from '../actions/MainAction';
+import { getNewsList, getPartnersList } from '../actions/MainAction';
 
-const PartnersContainer = () => {
+const PartnersContainer = ({ partnersListArr }) => {
 
-    const swiperNewsRef = useRef(null);
+    const swiperPartnersRef = useRef(null);
 
-    const dispatch = useDispatch()
-    const newsListArr = useSelector(state => state.Data.newsListArr)
-    useEffect(() => {
-        dispatch(getNewsList())
-    }, [dispatch])
 
-    console.log(newsListArr);
     useEffect(() => {
         const interval = setInterval(() => {
-            if (swiperNewsRef.current && swiperNewsRef.current.swiper) {
-                swiperNewsRef.current.swiper.slideNext();
+            if (swiperPartnersRef.current && swiperPartnersRef.current.swiper) {
+                swiperPartnersRef.current.swiper.slideNext();
             }
         }, 8000);
 
@@ -32,12 +26,15 @@ const PartnersContainer = () => {
     }, []);
 
 
+    console.log(partnersListArr);
+
+
     return (
         <div className='partners_container container'>
             <Swiper
 
-                ref={swiperNewsRef}
-                slidesPerView={4}
+                ref={swiperPartnersRef}
+                slidesPerView={3}
                 spaceBetween={20}
                 loop={true}
                 keyboard={{
@@ -56,12 +53,12 @@ const PartnersContainer = () => {
                         slidesPerView: 2,
 
                     },
-                    768: {
-                        slidesPerView: 3,
+                    // 768: {
+                    //     slidesPerView: 3,
 
-                    },
+                    // },
                     1180: {
-                        slidesPerView: 4,
+                        slidesPerView: 3,
 
                     },
                 }}
@@ -77,16 +74,16 @@ const PartnersContainer = () => {
 
 
                 {
-                    newsListArr?.map((data, i) => {
+                    partnersListArr?.map((data, i) => {
                         return (
                             <>
                                 {
-                                    data.is_active ?
-                                        <SwiperSlide className='partners_card'>
-                                            <div className="partners_card_img">
-                                                <img src={data.image} alt="" />
-                                            </div>
-                                        </SwiperSlide> : null
+                                    
+                                        <SwiperSlide key={i} className='partners_card'>
+
+                                            <img src={data.image} alt="" />
+
+                                        </SwiperSlide> 
                                 }
 
                             </>
@@ -100,14 +97,14 @@ const PartnersContainer = () => {
 
 
             </Swiper>
-            <div className="news_swiper_btns">
+            {/* <div className="news_swiper_btns">
                 <div className="swiper_button slider_prev_btn1">
                     <IoIosArrowBack />
                 </div>
                 <div className="swiper_button slider_next_btn1">
                     <IoIosArrowForward />
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -11,6 +11,11 @@ const HeaderSecondCards = () => {
         navigate('/course-online-register')
     }
 
+
+    const onlineExamLogin=()=>{
+        navigate('/online-exam-login')
+    }
+
     
     return (
         <ul className='header_second_cards_container container'>
@@ -29,7 +34,7 @@ const HeaderSecondCards = () => {
             </li>
             
             
-            <li className="header_second_card">
+            <li onClick={onlineExamLogin} className="header_second_card">
                 <div>
                     <img src={OnlineExamIcon} alt="" />
 

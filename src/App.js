@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import {  Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import Home from './pages/Home'
 import AboutPage from './pages/AboutPage';
 import LuckPage from './pages/LuckPage';
@@ -33,16 +33,23 @@ import PrivateRoute from './components/PrivateRoute';
 import PrivateRouteRegister from './components/PrivateRouteRegister';
 import NotificationPage from './pages/NotificationPage';
 import CourseOnlineRegisterPage from './pages/CourseOnlineRegisterPage';
+import OnlineExamLogin from './pages/OnlineExamLogin';
+import OnlineExamRegister from './pages/OnlineExamRegister';
+import Dashboard from './pages/Dashboard';
+import Exams from './pages/Exams';
+import ExamResults from './pages/ExamResults';
+import PrivateRouteExam from './components/PrivateRouteExam';
 
 const App = () => {
   const dispatch = useDispatch()
   const { loggedInUser, settingsListArr, otherHeaderBannerLoading } = useSelector(state => state.Data)
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const redirectToHome = () => {
-    navigate('/');
-  };
+  // const redirectToHome = () => {
+  //   navigate('/panda-school-project');
+  //   console.log("Redirecting to home page");
+  // };
 
   useEffect(() => {
     dispatch(getSettingsList())
@@ -55,7 +62,7 @@ const App = () => {
   console.log(loggedInUser);
 
 
-  
+
 
   return (
     <div>
@@ -69,7 +76,7 @@ const App = () => {
 
 
       </Helmet>
-{/*  */}
+      {/*  */}
 
       <Routes>
         <Route path='/panda-school-project' element={<Home />} />
@@ -132,7 +139,7 @@ const App = () => {
         <Route path='/register' element={<PrivateRouteRegister Element={RegisterPage} />} />
         <Route path='/notification' element={<PrivateRouteRegister Element={NotificationPage} />} />
         <Route path='/login' element={<LoginPage />} />
-       
+
         <Route path='/branchs-category/:id' element={<PrivateRoute Element={BranchsCategory2} />} />
         {/* ..... */}
         <Route path='/category/:id' element={<PrivateRoute Element={BranchsAbiturientsAccountingPage} />} />
@@ -140,17 +147,26 @@ const App = () => {
         <Route path='/branchs-teachers-accounting' element={<PrivateRoute Element={BranchsTeachersAccountingPage} />} />
         <Route path='/branchs-students-accounting' element={<PrivateRoute Element={BranchsStudentsAcountingPage} />} />
         <Route path='/branchs-abiturient-accounting' element={<PrivateRoute Element={BranchsAbiturientsAccountingPage} />} />
-       
+
         <Route path="/accounting" element={<PrivateRoute Element={Accounting2Page} />} />
 
 
 
 
         <Route path='/branchs-accounting-abiturient' element={<PrivateRoute Element={BranchsAccountingAbiturient} />} />
-       
+
         <Route path='/branchs-accounting-teachers' element={<PrivateRoute Element={BranchsAccountingTeachers} />} />
 
-        <Route path="*" render={redirectToHome} />
+        <Route path='/online-exam-login' element={<OnlineExamLogin />} />
+        {/* <Route path='/online-exam-signup' element={<PrivateRouteExam Element={OnlineExamRegister} />} /> */}
+        <Route path='/online-exam-signup' element={<OnlineExamRegister />} />
+        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/exams' element={<Exams />} />
+        <Route path='/exam-results' element={<ExamResults />} />
+
+        {/* <Route path="*" render={redirectToHome} /> */}
+        <Route path="*" element={<Home />} />
+
       </Routes>
 
       {otherHeaderBannerLoading && <HeaderLoading />}

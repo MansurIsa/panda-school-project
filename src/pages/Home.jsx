@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import HeaderHead from '../components/HeaderHead'
 import SectionHeader from '../components/SectionHeader'
 import VideoContainer from '../components/VideoContainer'
@@ -13,8 +13,19 @@ import Footer from '../components/Footer'
 import MainFirstCards from '../components/MainFirstCards'
 import { Helmet } from 'react-helmet'
 import Partners from '../components/Partners'
+import { useDispatch, useSelector } from 'react-redux'
+import { getPartnersList } from '../actions/MainAction'
 
 const Home = () => {
+
+
+  const dispatch = useDispatch()
+  const { partnersListArr } = useSelector(state => state.Data)
+  useEffect(() => {
+    dispatch(getPartnersList())
+  }, [dispatch])
+
+  console.log(partnersListArr);
   return (
     <div>
       <Helmet>
@@ -48,10 +59,16 @@ const Home = () => {
           <Teachers />
         </section>
 
-        {/* <section>
-          <SectionHeader sectionHeader="Partnyorlarımız" sectionLink="Kursumuzla partnyor şirkətlər!" />
-          <Partners />
-        </section> */}
+        {
+          partnersListArr.length > 0 ?
+            <section>
+              <SectionHeader sectionHeader="Partnyorlarımız" sectionLink="Kursumuzla partnyor şirkətlər!" />
+              <Partners />
+            </section> : null
+        }
+
+
+        
       </main>
       <Footer />
     </div>

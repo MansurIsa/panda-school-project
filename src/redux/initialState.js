@@ -15,6 +15,7 @@ export const initialState = {
     editionRetrieveObj: {},
     settingsListArr: [],
     branchListArr: [],
+    partnersListArr: [],
     contactNameValue: "",
     contactEmailValue: "",
     contactSubjectValue: "",
@@ -371,8 +372,16 @@ export const initialState = {
 
 
     fixedSocialIcons: false,
-    whatsappChat: false
+    whatsappChat: false,
 
+
+    // exams
+    examsUserObj: {},
+    exams: [],
+    exam: {},
+    examsModal: false,
+    examQuestions: [],
+    examDuration: ""
 
 
 }

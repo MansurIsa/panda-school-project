@@ -469,6 +469,9 @@ export const MainSlice = createSlice({
         getNotificationListArr: (state, action) => {
             state.notificationListArr = action.payload
         },
+        getPartnersListArr: (state, action) => {
+            state.partnersListArr = action.payload
+        },
         setUnreadCount: (state, action) => {
             state.unreadCount = action.payload
         },
@@ -1311,6 +1314,27 @@ export const MainSlice = createSlice({
             state.whatsappChat=true
         },
 
+
+
+        // Exams
+
+        getExamsUsersObjFunc: (state,action)=>{
+            state.examsUserObj=action.payload
+        },
+       
+        getExamsFunc: (state,action)=>{
+            state.exams=action.payload
+        },
+
+        examsStartModalFunc: (state,action)=>{
+            state.exam=action.payload
+            state.examsModal=true
+            state.examDuration=action.payload.exam_duration
+        },
+
+        getExamQuestionsFunc: (state,action)=>{
+            state.examQuestions=action.payload
+        }
        
        
 
@@ -1336,6 +1360,7 @@ export const {
     getServiceRetrieveObj,
     getSettingsListArr,
     getBranchListArr,
+    getPartnersListArr,
     contactNameChange,
     contactEmailChange,
     contactSubjectChange,
@@ -1697,8 +1722,14 @@ export const {
 
     fixedSocialCommonHandle,
     whatsappCloseIcon,
-    whatsappFixedIcon
+    whatsappFixedIcon,
 
+
+    // exams
+    getExamsUsersObjFunc,
+    getExamsFunc,
+    examsStartModalFunc,
+    getExamQuestionsFunc
    
 
 } = MainSlice.actions;
